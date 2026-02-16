@@ -1,0 +1,123 @@
+---
+title: "Flooring Installation Services in Central Florida"
+description: "Professional flooring installation in Central Florida. Tile, vinyl, laminate, and hardwood installed for durability and humidity control."
+permalink: "/flooring-installation/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/interior.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Flooring Installation</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/interior-exterior-painting/" class="cs-link cs-active">Flooring Installation</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/flooring-banner.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/flooring-banner.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/flooring-banner.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/flooring-banner.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/flooring-banner.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/flooring-banner.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/flooring-banner.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/flooring-banner.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/flooring-banner.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/flooring-banner.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+        <!-- ============================================ -->
+    <!--                 Content Page                 -->
+    <!-- ============================================ -->
+    
+    <!-- ============================================ 
+                    This Stitch is used for content heavy interior pages
+                    that have no design or layout.  Often times these are 
+                    content silos where you talk extensively about a topic
+                    to educate your visitors and rank on Google for the 
+                    content.  These are great for pages that have a TON
+                    of content.  Design isn't important here, it's all 
+                    about making the content accessible and easy to read.
+                ================================================= -->
+    
+    <section id="content-page-1399">
+        <div class="cs-container">
+            <div class="cs-image-group">
+                <div class="cs-flex">
+                    <picture class="cs-background">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="/assets/images/flooring-install-m.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="/assets/images/flooring-install.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="/assets/images/flooring-install.jpg" alt="people"
+                            width="542" height="728">
+                    </picture>
+                </div>
+                <div>
+                    <p>
+                        These services are provided throughout Central Florida, including Tampa, Orlando, Kissimmee, Winter Park,
+                        Altamonte
+                        Springs, Sanford, Lake Nona, and surrounding areas.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <strong>Related Services:</strong> <a href="/interior-exterior-painting/">Interior & Exterior Painting</a> • <a
+                            href="/carpentry-services/">Carpentry Services</a> • <a href="/drywall-popcorn-ceiling-removal/">Drywall Installation</a>
+                    </p>
+                </div>
+            </div>
+            <div class="cs-content">
+                <h1 class="cs-title">Flooring Installation –<span class="cs-color">Central Florida</span></h1>
+    
+                <p>
+                    Flooring installation services are provided for residential and commercial spaces. Materials and methods are selected to perform well in Central Florida’s humidity and daily use.
+                </p>
+                <h4>Services Offered</h4>
+                <ul>
+                    <li>Hardwood, laminate, vinyl, and tile flooring</li>
+                    <li>Subfloor preparation and leveling</li>
+                    <li>Flooring repairs and replacements</li>
+                    <li>Baseboards and transition installation</li>
+                </ul>
+                <h4>Service Approach</h4>
+                <ol>
+                    <li>Measurement and material selection</li>
+                    <li>Subfloor preparation</li>
+                    <li>Professional installation</li>
+                    <li>Final inspection</li>
+                </ol>
+                <h4>Service Benefits</h4>
+                <ul>
+                    <li>Accurate installation for long-term durability</li>
+                    <li>Clean and efficient work process</li>
+                    <li>Flooring solutions matched to lifestyle and budget</li>
+                </ul>
+                <a href="/contact/" class="cs-button-solid">Book An Appointment</a>
+            </div>
+        </div>
+    
+    </section>
+
+     {% include 'sections/cta.html' %}
+
+{% endblock %}

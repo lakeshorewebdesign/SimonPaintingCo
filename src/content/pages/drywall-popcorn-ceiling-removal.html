@@ -1,0 +1,112 @@
+---
+title: "Drywall & Popcorn Ceiling Removal in Central Florida"
+description: "Drywall installation, repair, texturing, and popcorn ceiling removal in Central Florida. Clean finishes and modern interior upgrades."
+permalink: "/drywall-popcorn-ceiling-removal/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/interior.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Drywall Installation, Texturing & Popcorn Ceiling Removal</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/interior-exterior-painting/" class="cs-link cs-active">Drywall Installation, Texturing & Popcorn Ceiling Removal</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-banner.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-banner.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/drywall-banner.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/drywall-banner.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/drywall-banner.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/drywall-banner.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/drywall-banner.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/drywall-banner.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/drywall-banner.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/drywall-banner.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+<!--                  Side By Side                -->
+<!-- ============================================ -->
+
+<section id="content-page-1399">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <div class="cs-flex">
+                <picture class="cs-background">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/popcorn-cropped.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/popcorn.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/popcorn.jpg" alt="Ceiling with popcorn removed" width="542" height="728">
+                </picture>
+            </div>
+            <div>
+                <p>
+                    These services are provided throughout Central Florida, including Tampa, Orlando, Kissimmee, Winter Park,
+                    Altamonte
+                    Springs, Sanford, Lake Nona, and surrounding areas.
+                </p>
+            </div>
+            <div>
+                <p>
+                        <strong>Related Services:</strong> <a href="/interior-exterior-painting/">Exterior & Interior Painting</a> • <a href="/carpentry-services/">Carpentry Services</a> • <a href="/flooring-installation/">Flooring Installation</a>
+                    </p>
+            </div>
+        </div>
+       
+        <div class="cs-content">
+            <h1 class="cs-title">Drywall Installation, Texturing & Popcorn Ceiling Removal – <span class="cs-color">Central Florida</span></h1>
+            
+            <p>
+                Drywall installation, repair, and ceiling services are offered to modernize residential and light commercial interiors across Central Florida. Work is completed with attention to detail and minimal disruption
+            </p>
+           <h4>Services Offered</h4>
+            <ul>
+                <li>Drywall installation and replacement</li>
+                <li>Taping, mudding, and finishing</li>
+                <li>Texture matching and custom textures</li>
+                <li>Popcorn ceiling removal and refinishing</li>
+                <li>Drywall repairs from cracks, holes, or water damage</li>
+		<li>Low-VOC paint options</li>
+            </ul>
+            <h4>Service Approach</h4>
+            <ol>
+                <li>Protection of surrounding areas</li>
+                <li>Precise installation and finishing</li>
+                <li>Texture or smooth skim-coat application</li>
+                <li>Cleanup and quality review</li>
+            </ol>
+            <h4>Service Benefits</h4>
+            <ul>
+                <li>Smooth, paint-ready surfaces</li>
+                <li>Dust-control practices</li>
+                <li>Seamless blending with existing walls and ceilings</li>
+            </ul>
+            <a href="/contact/" class="cs-button-solid">Book An Appointment</a>
+        </div>
+    </div>
+    
+</section>
+                                
+
+     {% include 'sections/cta.html' %}
+
+{% endblock %}
