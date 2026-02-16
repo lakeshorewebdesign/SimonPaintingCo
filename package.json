@@ -5,12 +5,14 @@
     "main": "index.js",
     "scripts": {
         "watch:cms": "npx decap-server",
-        "watch:eleventy": "cross-env ELEVENTY_ENV=DEV eleventy --serve",
-        "build:eleventy": "cross-env ELEVENTY_ENV=PROD eleventy",
-        "start": "run-p watch:*",
-        "build": "run-s build:*",
-		"preview": "cross-env ELEVENTY_ENV=PROD eleventy --serve",
-		"remove-dark-mode": "node scripts/remove-dark-mode.js"
+        "11ty:build": "npx @11ty/eleventy",
+        "11ty:watch": "npx @11ty/eleventy --watch --quiet --ignore-initial",
+        "build": "11ty:build",
+        "util:rimraf": "npx rimraf _site",
+        "start": "npm-run-all util:rimraf 11ty:build --parallel 11ty:watch wrangler:dev",
+        "wrangler:dev": "npx wrangler dev --live-reload",
+        "wrangler:deploy": "npx wrangler deploy"
+        
     },
     "repository": {
         "type": "git",
@@ -39,5 +41,8 @@
         "npm-run-all2": "^8.0.4",
         "postcss": "^8.5.6",
         "sass": "^1.97.3"
+    },
+    "devDependencies": {
+        "wrangler": "^4.65.0"
     }
 }
