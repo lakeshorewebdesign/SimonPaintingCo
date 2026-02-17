@@ -299,21 +299,21 @@
 }
 
 /* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #hero-668 {
-            &:before {
-                filter: brightness(50%);
-            }
+// @media only screen and (min-width: 0rem) {
+//     body.dark-mode {
+//         #hero-668 {
+//             &:before {
+//                 filter: brightness(50%);
+//             }
 
-            .cs-container {
-                &:before {
-                    filter: brightness(50%);
-                }
-            }
-        }
-    }
-}
+//             .cs-container {
+//                 &:before {
+//                     filter: brightness(50%);
+//                 }
+//             }
+//         }
+//     }
+// }
 
                                 
 
@@ -423,25 +423,25 @@
 }
 
 /* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #h-services-81 {
-            .cs-card-group {
-                background: var(--medium);
-            }
+// @media only screen and (min-width: 0rem) {
+//     body.dark-mode {
+//         #h-services-81 {
+//             .cs-card-group {
+//                 background: var(--medium);
+//             }
 
-            .cs-icon {
-                background: var(--darkTint);
-            }
+//             .cs-icon {
+//                 background: var(--darkTint);
+//             }
 
-            .cs-title {
-                color: #fff;
-            }
+//             .cs-title {
+//                 color: #fff;
+//             }
 
-            .cs-text {
-                color: #fff;
-            }
-        }
-    }
-}
+//             .cs-text {
+//                 color: #fff;
+//             }
+//         }
+//     }
+// }
                                 
