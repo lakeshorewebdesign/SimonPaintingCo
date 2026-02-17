@@ -193,27 +193,27 @@ body {
 		display: none !important;
 	}
 
-	.cs-dark,
-	.dark {
-		display: none !important;
-	}
+	// .cs-dark,
+	// .dark {
+	// 	display: none !important;
+	// }
 
-	body.dark-mode {
-		.cs-light,
-		.light {
-			display: none !important;
-		}
+	// body.dark-mode {
+	// 	.cs-light,
+	// 	.light {
+	// 		display: none !important;
+	// 	}
 
-		.cs-dark,
-		.dark {
-			display: block !important;
-		}
+	// 	.cs-dark,
+	// 	.dark {
+	// 		display: block !important;
+	// 	}
 
-		.cs-button-outline {
-			border-color: #fff;
-			color: #fff;
-		}
-	}
+	// 	.cs-button-outline {
+	// 		border-color: #fff;
+	// 		color: #fff;
+	// 	}
+	// }
 }
 
 /* Desktop Utilities */
@@ -264,22 +264,22 @@ body {
 		}
 	}
 
-	body.dark-mode {
-		background-color: var(--dark);
+	// body.dark-mode {
+	// 	background-color: var(--dark);
 
-		p,
-		li,
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			color: #fff;
-		}
+	// 	p,
+	// 	li,
+	// 	h1,
+	// 	h2,
+	// 	h3,
+	// 	h4,
+	// 	h5,
+	// 	h6 {
+	// 		color: #fff;
+	// 	}
 
 		
-	}
+	// }
 }
 
 /* Fonts */
@@ -753,7 +753,7 @@ body {
 }
 
 /* Dark Mode */
-@media only screen and (max-width: 1023.5px) {
+// @media only screen and (max-width: 1023.5px) {
 // 	body.dark-mode {
 // 		#cs-navigation {
 // 			background-color: var(--dark);
@@ -821,7 +821,7 @@ body {
 // 			}
 // 		}
 // 	}
-}
+// }
 
 /*-- -------------------------- -->
 <---   Mobile Navigation Menu   -->
@@ -987,7 +987,7 @@ body {
 		}
 
 		.cs-li-link {
-			white-space: nowrap;
+			// white-space: nowrap;
 			&.cs-drop-link {
 				/* 14px - 16px */
 				font-size: clamp(0.875rem, 2vw, 1.25rem);
