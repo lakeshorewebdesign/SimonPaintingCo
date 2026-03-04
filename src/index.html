@@ -408,7 +408,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             </ul>
         </div>
         <!--Form-->
-        <form class="cs-form" name="Contact Form" method="post" data-netlify="true">
+        <form class="cs-form" name="Contact Form" method="post" data-netlify="true" netlify-honeypot="bot-field">
             <label class="cs-label">
                 Name
                 <input class="cs-input" required type="text" id="name-1695" name="name" placeholder="Name">
@@ -429,6 +429,11 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 Message
                 <textarea class="cs-input cs-textarea" required name="Message" id="message-1695" placeholder="Write message..."></textarea>
             </label>
+            <p class="hidden">
+                <label>
+                    Don’t fill this out if you’re human: <input name="bot-field" type="text" />
+                </label>
+            </p>
             <p class="cs-wrapper">
                 <button class="cs-button-solid cs-submit" type="submit">Schedule Consultation</button>
             </p>

@@ -58,7 +58,7 @@ permalink: "/contact/"
                         Experience the difference that personalized service, meticulous craftsmanship, and genuine passion make. Contact us today for your free consultation and estimate.
                     </p>
                 </div>
-                <form id="cs-form-265" name="Contact Form" method="post" data-netlify="true">
+                <form id="cs-form-265" name="Contact Form" method="post" data-netlify="true" netlify-honeypot="bot-field">
                     <label>
                         Name
                         <input required type="text" id="name-265" name="name" placeholder="Name">
@@ -79,6 +79,11 @@ permalink: "/contact/"
                         Message
                         <textarea required name="Message" id="message-265" placeholder="Write message..."></textarea>
                     </label>
+                    <p class="hidden">
+                        <label>
+                            Don’t fill this out if you’re human: <input name="bot-field" type="text" />
+                        </label>
+                    </p>
                     <button class="cs-button-solid cs-submit" type="submit">Submit Message</button>
                 </form>
             </div>
