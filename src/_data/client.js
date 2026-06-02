@@ -2,7 +2,7 @@ module.exports = {
     name: "Simon Painting Co",
     email: "Simonpaintingco@gmail.com",
     phoneForTel: "813-613-8253",
-    phoneFormatted: "(813) 613-8253",
+    phoneFormatted: "(727) 427-1957",
     address: {
         lineOne: "First Address Line",
         lineTwo: "Second Address Line",
